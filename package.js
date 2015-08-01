@@ -1,12 +1,8 @@
 Package.describe({
   name: 'dverba:sidekiq',
   version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
+  summary: 'a simple meteorite package, providing a wrapper for the node-sidekiq',
   git: 'https://github.com/dplakhov/meteor-sidekiq.git',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
 });
 
