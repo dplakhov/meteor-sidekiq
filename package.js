@@ -20,3 +20,9 @@ Package.onTest(function(api) {
   api.use('dverba:sidekiq');
   api.addFiles('sidekiq-tests.js');
 });
+
+Npm.depends({
+  hiredis: '0.1.15',
+  redis: '0.12.1',
+  sidekiq: '1.1.1'
+});
