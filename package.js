@@ -1,12 +1,15 @@
 Package.describe({
   name: 'dverba:sidekiq',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'a simple meteorite package, providing a wrapper for the node-sidekiq',
   git: 'https://github.com/dplakhov/meteor-sidekiq.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
+  if (api.export) {
+    api.export('Sidekiq');
+  }
   api.versionsFrom('1.1.0.2');
   api.addFiles('sidekiq.js');
 });
